@@ -7,9 +7,8 @@ import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#features", label: "Features" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#about", label: "About" },
+  { href: "#core-offer", label: "Our Offer" },
   { href: "#contact", label: "Contact" },
 ]
 
@@ -42,10 +41,10 @@ export function Header() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center transition-transform group-hover:scale-105">
-              <span className="text-primary-foreground font-bold text-lg">P</span>
+              <span className="text-primary-foreground font-bold text-lg">M</span>
             </div>
             <span className="font-serif text-xl font-bold text-foreground">
-              PromoPlay
+              Mav-Rick
             </span>
           </a>
 
@@ -83,7 +82,7 @@ export function Header() {
 
             {/* CTA Button */}
             <Button className="hidden sm:inline-flex rounded-full px-6" asChild>
-              <a href="#contact">Join Now</a>
+              <a href="#contact">Contact Us</a>
             </Button>
 
             {/* Mobile Menu Toggle */}
@@ -123,7 +122,7 @@ export function Header() {
             </a>
           ))}
           <Button className="mt-2 rounded-full" asChild>
-            <a href="#contact">Join Now</a>
+            <a href="#contact">Contact Us</a>
           </Button>
         </nav>
       </div>

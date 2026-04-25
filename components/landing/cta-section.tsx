@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Sparkles } from "lucide-react"
+import { ArrowRight, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function CTASection() {
@@ -15,17 +15,16 @@ export function CTASection() {
           </div>
 
           <div className="inline-flex items-center gap-2 bg-primary-foreground/20 text-primary-foreground px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <Sparkles className="w-4 h-4" />
-            Limited Tournament Spots Available
+            <Phone className="w-4 h-4" />
+            Get in Touch
           </div>
 
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 text-balance">
-            Ready to Start Winning?
+            Ready to Grow Your Business?
           </h2>
 
-          <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8">
-            Join thousands of players competing in exclusive poker-style tournaments. 
-            No entry fee, no risk — just pure skill-based competition.
+          <p className="text-primary-foreground/90 text-lg sm:text-xl max-w-3xl mx-auto mb-8 leading-relaxed">
+            {"Call us today and we'll show you how you can benefit from advertising with Mav-Rick."}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -36,7 +35,7 @@ export function CTASection() {
               asChild
             >
               <a href="#contact">
-                Join Now — It&apos;s Free
+                Contact Us Today
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
@@ -46,7 +45,7 @@ export function CTASection() {
               className="rounded-full px-8 bg-transparent text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/10 hover:text-primary-foreground"
               asChild
             >
-              <a href="#how-it-works">Learn More</a>
+              <a href="#about">Learn More</a>
             </Button>
           </div>
         </div>

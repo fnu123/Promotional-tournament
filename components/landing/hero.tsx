@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Shield, Trophy, Users } from "lucide-react"
+import { ArrowRight, Play } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Hero() {
@@ -13,52 +13,60 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-8 animate-fade-in">
-            <Shield className="w-4 h-4" />
-            <span>Non-Gambling Promotional Contest</span>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Content */}
+          <div className="text-center lg:text-left">
+            {/* Headline */}
+            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 text-balance">
+              {"DON'T GAMBLE ON THE SUCCESS OF YOUR BUSINESS"}
+            </h1>
+
+            {/* Subheadline */}
+            <p className="text-xl sm:text-2xl text-primary font-semibold mb-8">
+              ADVERTISING AND PROMOTION — WE {"DON'T"}
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
+              <Button size="lg" className="rounded-full px-8 group" asChild>
+                <a href="#contact">
+                  Contact Us Today
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" className="rounded-full px-8" asChild>
+                <a href="#about">Learn More</a>
+              </Button>
+            </div>
           </div>
 
-          {/* Headline */}
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight mb-6 text-balance">
-            Get Access to Exclusive{" "}
-            <span className="text-primary">Poker-Style Tournaments</span>
-          </h1>
-
-          {/* Subheadline */}
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 text-pretty">
-            Compete for your share of $100,000 in prizes through our promotional contest platform. 
-            No entry fee required — access granted through our partner advertisers.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button size="lg" className="rounded-full px-8 group" asChild>
-              <a href="#contact">
-                Join Now
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" className="rounded-full px-8" asChild>
-              <a href="#how-it-works">Learn More</a>
-            </Button>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-10 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Shield className="w-5 h-5 text-primary" />
-              <span>No Buy-In Required</span>
+          {/* Video Placeholder */}
+          <div className="relative">
+            <div className="aspect-video bg-card border border-border rounded-2xl overflow-hidden shadow-xl relative group">
+              {/* Video Placeholder - Replace src with actual video */}
+              <div className="absolute inset-0 bg-secondary/50 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform cursor-pointer">
+                    <Play className="w-8 h-8 text-primary-foreground ml-1" />
+                  </div>
+                  <p className="text-muted-foreground text-sm">
+                    Video Placeholder
+                  </p>
+                  <p className="text-muted-foreground text-xs mt-1">
+                    Replace with your promotional video
+                  </p>
+                </div>
+              </div>
+              {/* Overlay text for video */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/90 to-transparent p-6">
+                <p className="text-foreground font-medium text-sm">
+                  See how Mav-Rick can help grow your business
+                </p>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <Trophy className="w-5 h-5 text-accent" />
-              <span>$100K Prize Pool</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Users className="w-5 h-5 text-primary" />
-              <span>10,000+ Players</span>
-            </div>
+            {/* Decorative Elements */}
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl -z-10" />
+            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent/20 rounded-full blur-2xl -z-10" />
           </div>
         </div>
       </div>

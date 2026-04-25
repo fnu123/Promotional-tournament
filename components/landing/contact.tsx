@@ -29,10 +29,10 @@ export function Contact() {
             Get In Touch
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            Ready to Join?
+            Contact Mav-Rick
           </h2>
           <p className="text-muted-foreground text-lg">
-            Have questions or want to learn more? Send us a message and we&apos;ll get back to you shortly.
+            {"Call us today and we'll show you how you can benefit from advertising with Mav-Rick."}
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export function Contact() {
               Contact Information
             </h3>
             <p className="text-muted-foreground mb-8">
-              We&apos;re here to answer any questions you have about PromoPlay and our tournament platform.
+              {"We're here to answer any questions about our advertising services, promotional products, and tournament opportunities."}
             </p>
 
             <div className="space-y-6">
@@ -53,7 +53,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Email</p>
-                  <p className="text-muted-foreground">support@promoplay.com</p>
+                  <p className="text-muted-foreground">info@mav-rick.com</p>
                 </div>
               </div>
 
@@ -63,7 +63,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Phone</p>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">Contact us for details</p>
                 </div>
               </div>
 
@@ -72,10 +72,9 @@ export function Contact() {
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Address (Demo)</p>
+                  <p className="font-medium text-foreground">Location</p>
                   <p className="text-muted-foreground">
-                    123 Tournament Street<br />
-                    Los Angeles, CA 90001
+                    Contact us for details
                   </p>
                 </div>
               </div>
@@ -93,7 +92,7 @@ export function Contact() {
                   Message Sent!
                 </h3>
                 <p className="text-muted-foreground">
-                  Thank you for reaching out. We&apos;ll get back to you within 24 hours.
+                  {"Thank you for reaching out. We'll get back to you shortly."}
                 </p>
               </div>
             ) : (
@@ -121,6 +120,15 @@ export function Contact() {
                 </div>
 
                 <div className="space-y-2">
+                  <Label htmlFor="company">Company / Business Name</Label>
+                  <Input
+                    id="company"
+                    placeholder="Your business name"
+                    className="rounded-lg"
+                  />
+                </div>
+
+                <div className="space-y-2">
                   <Label htmlFor="subject">Subject</Label>
                   <Input
                     id="subject"
@@ -134,7 +142,7 @@ export function Contact() {
                   <Label htmlFor="message">Message</Label>
                   <Textarea
                     id="message"
-                    placeholder="Tell us more about your inquiry..."
+                    placeholder="Tell us about your advertising needs..."
                     rows={5}
                     required
                     className="rounded-lg resize-none"
