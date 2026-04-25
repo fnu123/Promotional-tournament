@@ -24,13 +24,13 @@ export function AboutSection() {
             
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
-                Mav-Rick helps advertise your business while offering high-quality promotional products such as pens, shirts, jackets, caps, cups, mugs, and more.
+                Mav-Rick can advertise your business and offer you the best prices for your businesses, promotional logo items(pens, shirts, jackets, caps, cups, mugs and much more.)
               </p>
               <p>
-                We also advise you on the best ways to promote your business or event using these products.
+                We'll also help advise you on the best ways to promote your business or event with our products.
               </p>
               <p className="text-foreground font-medium">
-                {"At Mav-Rick, we don't just advertise your business — we focus on helping build it, with a unique approach."}
+                {"At Mav-Rick, we don't just advertise your business — we focus on helping build it, with a unique twist."}
               </p>
             </div>
           </div>

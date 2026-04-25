@@ -43,30 +43,16 @@ export function Hero() {
           {/* Video Placeholder */}
           <div className="relative">
             <div className="aspect-video bg-card border border-border rounded-2xl overflow-hidden shadow-xl relative group">
-              {/* Video Placeholder - Replace src with actual video */}
-              <div className="absolute inset-0 bg-secondary/50 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform cursor-pointer">
-                    <Play className="w-8 h-8 text-primary-foreground ml-1" />
-                  </div>
-                  <p className="text-muted-foreground text-sm">
-                    Video Placeholder
-                  </p>
-                  <p className="text-muted-foreground text-xs mt-1">
-                    Replace with your promotional video
-                  </p>
-                </div>
-              </div>
-              {/* Overlay text for video */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/90 to-transparent p-6">
-                <p className="text-foreground font-medium text-sm">
-                  See how Mav-Rick can help grow your business
-                </p>
-              </div>
+
+              <video
+                src="/videos/mavrick.mov"
+                controls
+                autoPlay
+                muted
+                loop
+                className="w-full h-full object-cover"
+              />
             </div>
-            {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl -z-10" />
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent/20 rounded-full blur-2xl -z-10" />
           </div>
         </div>
       </div>
